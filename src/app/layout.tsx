@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Rubik } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import NextTopLoader from 'nextjs-toploader'
 
@@ -77,7 +78,7 @@ export default function RootLayout({
         <NextTopLoader color='#1cd98e' height={3} shadow="0 0 5px #2299DD,0 0 5px #2299DD" showSpinner={false}/>
         {children}
         {modal}
-     
+        <SpeedInsights />
 
       </body>
     </html>
